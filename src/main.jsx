@@ -5,8 +5,6 @@ import './index.css'
 import { RouterProvider, createBrowserRouter } from 'react-router-dom'
 import Layout from './Layout.jsx'
 import Home from './components/Home/Home.jsx'
-import About from './components/About/About.jsx'
-import Contact from './components/Contact/Contact.jsx'
 import CreateUser from './components/CreateUser/CreateUser.jsx'
 import DisplayUser from './components/DisplayUser/DisplayUser.jsx'
 
@@ -21,14 +19,6 @@ const router = createBrowserRouter([
     children: [{
       path: "",
       element: <Home />
-    },
-    {
-      path: "about",
-      element: <About />
-    },
-    {
-      path: "contact",
-      element: <Contact />
     },
     {
       path: "createuser",
